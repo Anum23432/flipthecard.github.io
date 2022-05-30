@@ -1,0 +1,244 @@
+/* *,  
+*::before,  
+*::after {  
+ box-sizing: border-box;  
+} */
+
+.heading{
+    text-align: center;
+    /* background: rgb(0,15,46); */
+    padding:.5rem;
+    color: #e23b4a;
+    background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:cursive;
+    animation: bg 20s linear infinite;
+    
+}
+@keyframes bg {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+  }
+  body{
+    background: #00537e;
+    background: -moz-linear-gradient(to bottom, #00537e 0%, #3aa17e 100%);
+    background: -webkit-linear-gradient(to bottom, #00537e 0%, #3aa17e 100%);
+    background: linear-gradient(to bottom, #00537e 0%, #3aa17e 100%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+.count-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+    margin:auto auto;
+    padding:5px 0;
+
+}
+.attempt{
+    font-size: 30px;
+    background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:cursive;
+    animation: bg 60s linear infinite;
+    margin-bottom: 20%;
+}
+.reset{
+    cursor: pointer;
+    text-align:center;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    width: 150px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    height: 55px;
+   
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-bottom: 20%;
+}
+.reset:hover{
+    /* transform: scale(1.2); */
+    
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.time{
+    font-size:35px;
+    background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:cursive;
+    animation: bg 60s linear infinite;
+    margin-bottom: 20%;
+}
+.grid{
+    max-width: 750px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+.card{
+    position:relative;
+    transition:all 0.4s linear;
+    transform-style: preserve-3d;
+    margin:5px;
+}
+.card,.back,.front{
+    height:80px;
+    width:80px;
+}
+.back,
+.front {
+    position:absolute;
+    backface-visibility: hidden;
+}
+.front{
+    background: url('./images/q1.jpg')no-repeat center center  / contain;
+}
+.back{
+    transform:rotateY(180deg);
+    background-color: antiquewhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.selected{
+    box-shadow:0 0 5px 0 black;
+    transform:rotateY(180deg) ;
+}
+.match .front{
+    border:0px;
+    background: url("./images/cl1.jpg") no-repeat center center /  
+  contain !important;
+    cursor:not-allowed;
+    transform: none !important;
+}
+
+  @media only screen and (max-width: 700px){
+
+    .heading{
+        text-align: center;
+        padding:1px;
+        color: #e23b4a;
+        background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family:cursive;
+        animation: bg 20s linear infinite;
+        font-size: 25px;
+        
+    }
+    @keyframes bg {
+        0% {
+          background-position-x: 0;
+        }
+        100% {
+          background-position-x: 1000px;
+        }
+      }
+    .count-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        /* padding:0 0; */
+    
+    
+    }
+    .attempt{
+        font-size: 20px;
+        background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family:cursive;
+        animation: bg 60s linear infinite;
+        margin-bottom: 20%;
+    }
+    .reset{
+        cursor: pointer;
+        text-align:center;
+        background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+        width: 140px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        /* margin-top: 30px; */
+        height: 50px;
+       
+        border: none;
+        /* background-size: 300% 100%; */
+    
+        border-radius: 50px;
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        margin-bottom: 20%;
+    }
+    .reset:hover{
+        /* transform: scale(1.2); */
+        
+        background-position: 100% 0;
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .time{
+        font-size:25px;
+        background: -webkit-linear-gradient(330deg, #23966c 0%, #faaa54 25%, #e23b4a 50%, #db0768 75%, #360670 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family:cursive;
+        animation: bg 60s linear infinite;
+        margin-bottom: 20%;
+    }
+    .grid{
+        max-width: 500px;
+        margin:0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 4%;
+    }
+    .card{
+        position:relative;
+        transition:all 0.4s linear;
+        transform-style: preserve-3d;
+        margin:5px;
+    }
+    #wrapper{
+        max-width: 40rem;
+    }
+
+
+
+  }
+
