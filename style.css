@@ -31,7 +31,7 @@
     background: -webkit-linear-gradient(to bottom, #00537e 0%, #3aa17e 100%);
     background: linear-gradient(to bottom, #00537e 0%, #3aa17e 100%);
     background-repeat: no-repeat;
-    overflow: hidden;
+/*     overflow: hidden; */
   }
 .count-container{
     display:flex;
